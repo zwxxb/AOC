@@ -81,3 +81,21 @@
 - **Time:** O(n) for both parts, where `n` is the length of the input string
 - **Space:** O(1) for Part 1 and Part 2 (excluding input storage)
 - **n:** Length of the corrupted memory string
+
+## Day 4: XMAS Word Search
+
+### Algorithm Overview
+- **Input:** A word search grid represented as a 2D array of letters
+- **Part 1:** Count all occurrences of the word "XMAS" in the grid
+- **Part 2:** Identify "X-MAS" patterns where two "MAS" sequences intersect at the 'A' character, forming an 'X' shape
+
+### Solution Approach
+1. **Part 1 - Counting "XMAS" Sequences:**
+   - Iterate through each cell in the grid
+   - For each cell that matches the first character of "XMAS" or its reverse, check in all eight directions for the complete sequence
+   - Increment a counter for each valid sequence found
+
+### Complexity
+- **Time:** O(n * m * d), where `n` is the number of rows, `m` the number of columns, and `d` the number of directions (constant 8)
+- **Space:** O(n * m) for storing the grid
+- **n:** Number of rows in the grid
