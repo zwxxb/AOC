@@ -1,4 +1,4 @@
-# Advent of Code 2024 - Days 1, 2 & 3 Solutions
+# Advent of Code 2024 - Days 1, 2, 3 & 4 Solutions
 
 ## Day 1: Distance and Similarity Calculation
 
