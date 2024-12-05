@@ -1,4 +1,4 @@
-# Advent of Code 2024 - Days 1, 2, 3 & 4 Solutions
+# Advent of Code 2024 - Days 1, 2, 3, 4 & 5 Solutions
 
 ## Day 1: Distance and Similarity Calculation
 
@@ -99,3 +99,29 @@
 - **Time:** O(n * m * d), where `n` is the number of rows, `m` the number of columns, and `d` the number of directions (constant 8)
 - **Space:** O(n * m) for storing the grid
 - **n:** Number of rows in the grid
+
+## Day 5: Print Queue
+
+### Algorithm Overview
+- **Input:** Page ordering rules and updates
+- **Part 1:** Identify which updates are already in the correct order
+- **Part 2:** Correct the order of incorrectly-ordered updates
+
+### Solution Approach
+1. **Part 1 - Identifying Correctly Ordered Updates:**
+   - Parse the input to separate ordering rules and updates
+   - For each update, verify if it follows the ordering rules
+   - Identify the middle page number of each correctly-ordered update
+   - Sum the middle page numbers of the correctly-ordered updates
+
+2. **Part 2 - Correcting Order of Updates:**
+   - Identify updates that are not in the correct order
+   - Use the page ordering rules to sort the pages in the correct order
+   - Find the middle page number of each corrected update
+   - Sum the middle page numbers of the corrected updates
+
+### Complexity
+- **Time:** O(n + m) for parsing and checking order, where `n` is the number of rules and `m` is the number of updates
+- **Space:** O(n + m) for storing rules and updates
+- **n:** Number of ordering rules
+- **m:** Number of updates
