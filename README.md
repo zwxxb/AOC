@@ -126,7 +126,7 @@
 - **n:** Number of ordering rules
 - **m:** Number of updates
 
-## Day 6: Guard Patrol
+## Day 6: Guard Gallivant
 
 ### Algorithm Overview
 - **Input:** A map represented as a 2D array of characters
