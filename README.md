@@ -1,4 +1,4 @@
-# Advent of Code 2024 - Days 1, 2, 3, 4 & 5 Solutions
+# Advent of Code 2024 - Days 1, 2, 3, 4, 5 & 6 Solutions
 
 ## Day 1: Distance and Similarity Calculation
 
@@ -125,3 +125,31 @@
 - **Space:** O(n + m) for storing rules and updates
 - **n:** Number of ordering rules
 - **m:** Number of updates
+
+## Day 6: Guard Patrol
+
+### Algorithm Overview
+- **Input:** A map represented as a 2D array of characters
+- **Part 1:** Simulate the guard's patrol and count the number of unique positions visited
+
+### Solution Approach
+1. **Parsing Input:**
+   - Read the map from standard input
+   - Identify the initial position and direction of the guard based on special characters (`^`, `>`, `v`, `<`)
+
+2. **Simulating Patrol:**
+   - Initialize a set to keep track of visited positions
+   - Use a loop to simulate the guard's movement:
+     - Move the guard in the current direction
+     - If the guard encounters a wall (`#`) or the edge of the map, turn right
+     - Continue until a maximum number of iterations is reached or the guard moves out of bounds
+
+3. **Counting Unique Positions:**
+   - Track each unique position visited by the guard
+   - Print the total number of unique positions visited
+
+### Complexity
+- **Time:** O(max_loops), where `max_loops` is the maximum number of iterations allowed
+- **Space:** O(n * m) for storing the map and visited positions
+- **n:** Number of rows in the map
+- **m:** Number of columns in the mapgit 
