@@ -1,4 +1,4 @@
-# Advent of Code 2024 - Days 1, 2, 3, 4, 5 & 6 Solutions
+# Advent of Code 2024 - Days 1, 2, 3, 4, 5, 6 & 7 Solutions
 
 ## Day 1: Distance and Similarity Calculation
 
@@ -152,4 +152,29 @@
 - **Time:** O(max_loops), where `max_loops` is the maximum number of iterations allowed
 - **Space:** O(n * m) for storing the map and visited positions
 - **n:** Number of rows in the map
-- **m:** Number of columns in the mapgit 
+- **m:** Number of columns in the map
+
+## Day 7: Bridge Repair
+
+### Algorithm Overview
+- **Input:** Calibration equations with test values and numbers
+- **Part 1:** Determine which equations can be made true using addition and multiplication
+- **Part 2:** Include concatenation operator to determine which equations can be made true
+
+### Solution Approach
+1. **Part 1 - Addition and Multiplication:**
+   - Parse the input to separate test values and numbers
+   - For each equation, try all combinations of addition and multiplication
+   - Check if any combination produces the test value
+   - Sum the test values of the equations that can be made true
+
+2. **Part 2 - Including Concatenation:**
+   - Extend the approach to include the concatenation operator
+   - For each equation, try all combinations of addition, multiplication, and concatenation
+   - Check if any combination produces the test value
+   - Sum the test values of the equations that can be made true
+
+### Complexity
+- **Time:** O(2^k * k!), where `k` is the number of numbers in each equation (due to the combinations of operators)
+- **Space:** O(k) for storing intermediate results
+- **k:** Number of numbers in each equation
